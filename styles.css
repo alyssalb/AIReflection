@@ -8,7 +8,7 @@ body {
   background-color: #1E1E2E;
   color: #F8F8F2;
   background: #1E1E2E url('stars.png') repeat;
-  cursor: url('wand.png'), auto;
+  cursor: crosshair, auto;
 }
 
 h1 {
