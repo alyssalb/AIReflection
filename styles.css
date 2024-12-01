@@ -36,21 +36,6 @@ button, .btn {
   transition: all 0.3s ease;
 }
 
-/* Base Button Styles */
-button, .btn {
-  background-color: #FF79C6; /* Pink */
-  color: #1E1E2E; /* Dark text */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1em;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
-}
-
 /* Glow Effect on Hover with Animation */
 @keyframes glow {
   0% {
