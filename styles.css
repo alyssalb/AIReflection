@@ -1,16 +1,17 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Comic+Neue&display=swap');
 
+/* Base Styles */
 body {
   margin: 0;
   font-family: 'Comic Neue', sans-serif;
   font-size: 16px; /* Base font size */
   color: #F8F8F2;
-  background-color: rgba(30, 30, 46, 0.9); /* Semi-transparent background */;
+  background-color: rgba(30, 30, 46, 0.9); /* Semi-transparent background */
   cursor: crosshair, auto;
 }
 
-/* Style for Particles.js container */
+/* Particles.js Container */
 #particles-js {
   position: fixed;
   width: 100%;
@@ -21,60 +22,18 @@ body {
   background-color: #1E1E2E; /* Fallback background color */
 }
 
-/* Base Button Styles */
-button, .btn {
-  background-color: #FF79C6; /* Pink */
-  color: #1E1E2E; /* Dark text */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1em;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
+/* Header */
+header {
+  background-color: rgba(30, 30, 46, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  text-align: center;
 }
 
-/* Glow Effect on Hover with Animation */
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px #FF79C6;
-  }
-  50% {
-    box-shadow: 0 0 20px #FF79C6;
-  }
-  100% {
-    box-shadow: 0 0 5px #FF79C6;
-  }
-}
-
-button:hover, .btn:hover {
-  animation: glow 1s infinite;
-  transform: scale(1.05);
-}
-
-/* Glow Effect on Hover */
-button:hover, .btn:hover {
-  box-shadow: 0 0 10px #FF79C6, 0 0 20px #FF79C6, 0 0 30px #FF79C6;
-  transform: scale(1.05); /* Slightly enlarge the button */
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px #FF79C6;
-  }
-  50% {
-    box-shadow: 0 0 20px #FF79C6;
-  }
-  100% {
-    box-shadow: 0 0 5px #FF79C6;
-  }
-}
-
+/* Headings */
 h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 2em; /* 32px */
+  animation: fadeIn 2s ease-in;
 }
 
 h2 {
@@ -90,45 +49,41 @@ h3 {
   font-size: 1.17em; /* 18.72px */
 }
 
-p {
-  font-size: 1em; /* 16px */
-  line-height: 1.6;
-}
-
-a {
-  color: #FF79C6;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #BD93F9;
-}
-
+/* Navigation */
 nav a {
   margin: 0 15px;
   font-size: 1em;
-}
-
-nav a:hover, .btn:hover {
-  transform: scale(1.05);
+  color: #FF79C6;
+  text-decoration: none;
   transition: transform 0.2s;
 }
 
-header {
-  background-color: rgba(30, 30, 46, 0.9); /* Semi-transparent background */;
-  padding: 20px;
-  text-align: center;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.btn:hover {
+nav a:hover {
+  transform: scale(1.05);
   animation: glow 1s infinite alternate;
 }
 
+/* Buttons */
+button, .btn {
+  background-color: #FF79C6; /* Pink */
+  color: #1E1E2E; /* Dark text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  animation: glow 1s infinite alternate;
+  transform: scale(1.05);
+}
+
+/* Glow Effect Animation */
 @keyframes glow {
   from {
     box-shadow: 0 0 5px #FF79C6;
@@ -138,10 +93,13 @@ header {
   }
 }
 
-h1 {
-  animation: fadeIn 2s ease-in;
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
+/* Sections */
 section {
   padding: 60px 20px;
 }
@@ -152,6 +110,7 @@ section {
   text-align: center;
 }
 
+/* Collapsible Buttons */
 .collapsible-button {
   background-color: #6272A4;
   color: #F8F8F2;
@@ -161,8 +120,8 @@ section {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1em; /* Adjusted */
-  margin-bottom: 5px;
+  font-size: 1em;
+  margin-bottom: 15px; /* Increased space between buttons */
 }
 
 .collapsible-button:hover {
@@ -173,8 +132,9 @@ section {
   background-color: #44475A;
 }
 
+/* Collapsible Content */
 .collapsible-content {
-  display: none;
+  display: none; /* Hidden by default */
   overflow: hidden;
   padding: 0 18px;
   background-color: #44475A;
@@ -184,19 +144,25 @@ section {
   margin: 15px 0;
 }
 
+/* Paragraphs */
+p {
+  font-size: 1em; /* 16px */
+  line-height: 1.6;
+}
+
+/* Images */
 .reflection-image {
   max-width: 60%;
   height: auto;
   margin: 20px 0;
-  border: 2px solid #FF79C6;
+  border: 2px solid #FF79C6; /* Pink border to match theme */
   border-radius: 10px;
 }
 
+/* Footer */
 footer {
   background-color: #282A36;
   padding: 20px;
   text-align: center;
   color: #6272A4;
 }
-
-
