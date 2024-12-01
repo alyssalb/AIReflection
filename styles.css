@@ -8,6 +8,7 @@ body {
   background-color: #1E1E2E;
   color: #F8F8F2;
   background: #1E1E2E url('stars.png') repeat;
+  cursor: url('images/magic-wand.png'), auto;
 }
 
 h1 {
@@ -61,6 +62,19 @@ header {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+.btn:hover {
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #FF79C6;
+  }
+  to {
+    box-shadow: 0 0 20px #FF79C6;
+  }
 }
 
 h1 {
