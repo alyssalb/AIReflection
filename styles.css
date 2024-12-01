@@ -79,7 +79,7 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-  animation: glow 1s infinite alternate;
+  animation: glow 2s infinite alternate;
   transform: scale(1.05);
 }
 
