@@ -118,6 +118,13 @@ section {
   transition: background-color 0.3s ease;
 }
 
+.reflection-image {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border: 2px solid #FF79C6; /* Pink border to match theme */
+  border-radius: 10px;
+}
 
 
 h2 {
