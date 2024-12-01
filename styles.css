@@ -5,9 +5,8 @@ body {
   margin: 0;
   font-family: 'Comic Neue', sans-serif;
   font-size: 16px; /* Base font size */
-  background-color: #1E1E2E;
   color: #F8F8F2;
-  background: background-color: rgba(30, 30, 46, 0.9); /* Semi-transparent background */;
+  background-color: rgba(30, 30, 46, 0.9); /* Semi-transparent background */;
   cursor: crosshair, auto;
 }
 
@@ -66,7 +65,7 @@ nav a:hover, .btn:hover {
 }
 
 header {
-  background-color: #282A36;
+  background-color: rgba(30, 30, 46, 0.9); /* Semi-transparent background */;
   padding: 20px;
   text-align: center;
 }
@@ -98,7 +97,6 @@ section {
 }
 
 #intro {
-  background: url('background-image.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #FFFFFF;
   text-align: center;
