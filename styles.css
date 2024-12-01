@@ -78,7 +78,7 @@ section {
   background-color: #1E1E2E;
 }
 
-/* Styles for the iframe container */
+/* Styles for the iframe container portfolio section */
 .iframe-container {
   position: relative;
   overflow: hidden;
@@ -86,7 +86,7 @@ section {
   margin: 20px 0;
 }
 
-/* Styles for the iframe */
+/* Styles for the iframe portfolio section */
 .iframe-container iframe {
   position: absolute;
   top: 0;
@@ -95,6 +95,23 @@ section {
   height: 100%;
   border: none;
 }
+
+.open-new-tab-link {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: #F8F8F2;
+}
+
+.open-new-tab-link a {
+  color: #50FA7B; /* Green */
+  text-decoration: underline;
+}
+
+.open-new-tab-link a:hover {
+  color: #F1FA8C; /* Yellow */
+}
+
 
 h2 {
   color: #FF79C6;
