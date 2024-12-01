@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: 'Comic Neue', sans-serif;
+  font-size: 16px; 
   background-color: #1E1E2E;
   color: #F8F8F2;
   background: #1E1E2E url('stars.png') repeat;
@@ -12,6 +13,11 @@ body {
 
 h1, h2, h3 {
   font-family: 'Press Start 2P', cursive;
+}
+
+p {
+  font-size: 1em; /* Consistent with body font size */
+  line-height: 1.6; /* Improves readability */
 }
 
 a {
@@ -42,6 +48,7 @@ header {
 
 h1 {
   animation: fadeIn 2s ease-in;
+  font-size: 2em
 }
 
 
@@ -163,6 +170,7 @@ section {
 
 h2 {
   color: #FF79C6;
+  font-size: 1.5em
   text-align: center;
   margin-bottom: 40px;
 }
