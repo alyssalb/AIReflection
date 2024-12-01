@@ -1,0 +1,22 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Comic+Neue&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Comic Neue', sans-serif;
+  background-color: #1E1E2E;
+  color: #F8F8F2;
+}
+
+h1, h2, h3 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+a {
+  color: #FF79C6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #BD93F9;
+}
