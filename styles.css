@@ -118,8 +118,42 @@ section {
   transition: background-color 0.3s ease;
 }
 
+/* Collapsible Button Styles */
+.collapsible-button {
+  background-color: #6272A4;
+  color: #F8F8F2;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.collapsible-button:hover {
+  background-color: #50FA7B;
+}
+
+.collapsible-button.active {
+  background-color: #44475A;
+}
+
+/* Collapsible Content Styles */
+.collapsible-content {
+  display: none; /* Hidden by default */
+  overflow: hidden;
+  padding: 0 18px;
+  background-color: #44475A;
+}
+
+.collapsible-content p {
+  margin: 15px 0;
+}
+
 .reflection-image {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   margin: 20px 0;
   border: 2px solid #FF79C6; /* Pink border to match theme */
