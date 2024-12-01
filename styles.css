@@ -21,6 +21,71 @@ body {
   background-color: #1E1E2E; /* Fallback background color */
 }
 
+/* Base Button Styles */
+button, .btn {
+  background-color: #FF79C6; /* Pink */
+  color: #1E1E2E; /* Dark text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Base Button Styles */
+button, .btn {
+  background-color: #FF79C6; /* Pink */
+  color: #1E1E2E; /* Dark text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Glow Effect on Hover with Animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #FF79C6;
+  }
+  50% {
+    box-shadow: 0 0 20px #FF79C6;
+  }
+  100% {
+    box-shadow: 0 0 5px #FF79C6;
+  }
+}
+
+button:hover, .btn:hover {
+  animation: glow 1s infinite;
+  transform: scale(1.05);
+}
+
+/* Glow Effect on Hover */
+button:hover, .btn:hover {
+  box-shadow: 0 0 10px #FF79C6, 0 0 20px #FF79C6, 0 0 30px #FF79C6;
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #FF79C6;
+  }
+  50% {
+    box-shadow: 0 0 20px #FF79C6;
+  }
+  100% {
+    box-shadow: 0 0 5px #FF79C6;
+  }
+}
 
 h1 {
   font-family: 'Press Start 2P', cursive;
